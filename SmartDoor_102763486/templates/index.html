@@ -1,0 +1,16 @@
+<html lang="en">
+        {% include './partials/head.html' %}
+        <body>
+    
+            {% include './partials/nav.html' %}
+        <div class = "project content">
+            <<h2>Door Status</h2>
+            {% if latest_value < 12 %}
+                 <h6>Door Open</h6>
+            {% else %}
+                <h6>Door Closed</h6>
+            {% endif %}
+        </div>
+        {% include './partials/footer.html' %}
+    </body>
+</html>
