@@ -1,0 +1,17 @@
+<html lang="en">
+        {% include './partials/head.html' %}
+        <body>
+    
+            {% include './partials/nav.html' %}
+        <div class = "project content">
+            <h2>Sensor Data</h2>
+    
+            <h5><p>Max Distance of Object: {{ max_sonar }}</p></h5>
+            <h5><p>Min Distance of Object: {{ min_sonar }}</p></h5>
+            <h5><p>Number of times door opened: {{ below_12_count }}</p></h5>
+            <h5><p>Number of times movement was detected: {{ pir_1_count }}</p></h5>
+            <h5><p>Total Data Points: {{ total_data }}</p></h5>
+        </div>
+        {% include './partials/footer.html' %}
+    </body>
+</html>
